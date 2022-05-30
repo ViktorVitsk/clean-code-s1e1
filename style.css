@@ -1,47 +1,58 @@
-/* Reset Style */
+/* Reset Style (допустимо использовать теги для обнуления стилей) */
 ul {
   margin:0;
   padding: 0px;
 }
+
 li {
   list-style:none;
 }
+
 input,button{
   outline:none;
 }
+
 /* Basic Style */
 .page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__image {
   width: 100%;
 }
+
 .header .details {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-.header { text-align: center;
+
+  .header { text-align: center;
+  }
+
 }
-}
+
 .main-wrapper {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
+
 .task-wrapper {
   display: flex;
 }
@@ -55,9 +66,11 @@ input,button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3A3a;
 }
+
 /* Heading */
 .title,
 #top-section .label {
@@ -69,6 +82,7 @@ input,button{
   margin: 0;
   text-transform: uppercase;
 }
+
 .input-text {
   margin: 0;
   font-size: 18px;
@@ -81,6 +95,7 @@ input,button{
   font-family: Lato, sans-serif;
   color: #888;
 }
+
 .input-text:focus {
   color: #333;
 }
@@ -90,6 +105,7 @@ input,button{
   display: block;
   margin: 0 0 20px;
 }
+
 #new-task {
   width: 318px;
 }
@@ -104,6 +120,7 @@ input,button{
   justify-content: space-between;
   align-items: center;
 }
+
 .list > * {
   vertical-align: middle;
 }
@@ -111,20 +128,24 @@ input,button{
 .list > .input-checkbox {
   margin: 0 10px;
 }
+
 .list > .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
+
 .list > .input-text {
   width: 226px
 }
+
 .button.delete .img-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .button.delete .img-remove:hover {
   transform: rotateZ(0);
 }

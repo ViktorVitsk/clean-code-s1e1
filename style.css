@@ -73,7 +73,6 @@ button {
 }
 
 /* Heading */
-.title,
 .main__title {
   color: #333;
   font-weight: 700;
@@ -131,11 +130,6 @@ button {
 }
 
 .main__list > 
-* {
-  vertical-align: middle;
-}
-
-.main__list > 
 .main__input-checkbox {
   margin: 0 10px;
 }
@@ -153,14 +147,14 @@ button {
   width: 226px;
 }
 
-.main__button.main__delete 
+.main__delete 
 .main__img-remove {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.main__button.main__delete 
+.main__delete 
 .main__img-remove:hover {
   transform: rotateZ(0);
 }
@@ -178,13 +172,13 @@ button {
   display: none;
 }
 
-.main__list.main__todo_edit-mode 
+.main__todo_edit-mode 
 .main__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.main__list.main__todo_edit-mode 
+.main__todo_edit-mode 
 .main__label {
   display: none;
 }

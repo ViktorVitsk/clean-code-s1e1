@@ -18,32 +18,38 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
+    listItem.classList.add("list");
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
+    checkBox.classList.add("input-checkbox");
     //label
     var label=document.createElement("label");//label
     //input (text)
     var editInput=document.createElement("input");//text
     //button.edit
     var editButton=document.createElement("button");//edit button
+    editButton.classList.add("button");
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
+    deleteButton.classList.add("button")
     var deleteButtonImg=document.createElement("img");//delete button image
+    deleteButtonImg.classList.add("img-remove");
 
     label.innerText=taskString;
     label.className='task';
-
+    label.classList.add("label");
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
     editInput.className="task";
+    editInput.classList.add("input-text");
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="edit";
+    editButton.classList.add("edit");
 
-    deleteButton.className="delete";
+    deleteButton.classList.add("delete");
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -156,8 +162,8 @@ var bindTaskEvents=function(taskListItem,checkBoxEventHandler){
     console.log("bind list item events");
 //select ListItems children
     var checkBox=taskListItem.querySelector('input[type="checkbox"]');
-    var editButton=taskListItem.querySelector("button.edit");
-    var deleteButton=taskListItem.querySelector("button.delete");
+    var editButton=taskListItem.querySelector(".button.edit");
+    var deleteButton=taskListItem.querySelector(".button.delete");
 
 
     //Bind editTask to edit button.
